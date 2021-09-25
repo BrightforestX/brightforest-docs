@@ -74,6 +74,7 @@ paths:
         description: Name of the Todo
       security:
         - API Key: []
+      x-internal: true
   '/todos/{id}':
     get:
       summary: Get Todo
@@ -121,6 +122,7 @@ paths:
         *Markdown is supported in descriptions. Add information here for users to get accustomed to endpoints*
       security:
         - API Key: []
+      x-internal: true
     delete:
       summary: Delete Todo
       operationId: delete-todos-id
@@ -144,6 +146,7 @@ paths:
         *Markdown is supported in descriptions. Add information here for users to get accustomed to endpoints*
       security:
         - API Key: []
+      x-internal: true
     patch:
       summary: Update Todo
       operationId: patch-todos-id
@@ -166,6 +169,7 @@ paths:
               $ref: '#/components/schemas/Todos'
       security:
         - API Key: []
+      x-internal: true
     parameters:
       - $ref: '#/components/parameters/ID'
   /users:
@@ -207,6 +211,7 @@ paths:
         - Users
       security:
         - API Key: []
+      x-internal: true
     post:
       summary: Create User
       operationId: post-users-userID
@@ -231,6 +236,7 @@ paths:
         - Users
       security:
         - API Key: []
+      x-internal: true
 components:
   schemas:
     Todos:
