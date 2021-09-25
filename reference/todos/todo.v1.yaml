@@ -74,6 +74,7 @@ paths:
         description: Name of the Todo
       security:
         - API Key: []
+      x-internal: true
   '/todos/{id}':
     get:
       summary: Get Todo
@@ -144,6 +145,7 @@ paths:
         *Markdown is supported in descriptions. Add information here for users to get accustomed to endpoints*
       security:
         - API Key: []
+      x-internal: true
     patch:
       summary: Update Todo
       operationId: patch-todos-id
