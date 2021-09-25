@@ -209,6 +209,7 @@ paths:
         - Users
       security:
         - API Key: []
+      x-internal: true
     post:
       summary: Create User
       operationId: post-users-userID
@@ -233,6 +234,7 @@ paths:
         - Users
       security:
         - API Key: []
+      x-internal: true
 components:
   schemas:
     Todos:
