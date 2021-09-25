@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "type": "divider",
+      "title": "Divider"
+    },
+    {
+      "type": "item",
+      "title": "Item",
+      "uri": "docs/table-of-contents.md"
+    },
+    {
+      "type": "group",
+      "title": "Group",
+      "items": [
+        {
+          "type": "item",
+          "title": "Nested Item",
+          "uri": "README.md"
+        },
+        {
+          "type": "item",
+          "title": "Nested Item",
+          "uri": "reference/todos/hithere.yaml"
+        }
+      ]
+    },
+    {
+      "type": "item",
+      "title": "External Link",
+      "uri": "https://stoplight.io"
+    }
+  ]
+}
