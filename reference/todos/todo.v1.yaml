@@ -122,6 +122,7 @@ paths:
         *Markdown is supported in descriptions. Add information here for users to get accustomed to endpoints*
       security:
         - API Key: []
+      x-internal: true
     delete:
       summary: Delete Todo
       operationId: delete-todos-id
@@ -168,6 +169,7 @@ paths:
               $ref: '#/components/schemas/Todos'
       security:
         - API Key: []
+      x-internal: true
     parameters:
       - $ref: '#/components/parameters/ID'
   /users:
