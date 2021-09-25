@@ -16,7 +16,12 @@
         {
           "type": "item",
           "title": "Nested Item",
-          "uri": "docs/nested-item.md"
+          "uri": "README.md"
+        },
+        {
+          "type": "item",
+          "title": "Nested Item",
+          "uri": "reference/todos/hithere.yaml"
         }
       ]
     },
