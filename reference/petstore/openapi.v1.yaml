@@ -43,6 +43,7 @@ paths:
             application/json:
               schema:
                 $ref: ../common/models/error.v1.yaml
+      x-internal: true
     post:
       summary: Create a pet
       operationId: createPets
@@ -83,6 +84,7 @@ paths:
             application/json:
               schema:
                 $ref: ../common/models/error.v1.yaml
+      x-internal: true
 components:
   schemas:
     Pets:
@@ -93,3 +95,4 @@ components:
         - Pets
       items:
         $ref: ./models/pet.v1.yaml
+      x-internal: true

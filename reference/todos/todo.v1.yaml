@@ -44,6 +44,7 @@ paths:
       parameters:
         - $ref: '#/components/parameters/limit'
       security: []
+      x-internal: true
     post:
       summary: Create Todo
       operationId: post-todos
@@ -97,6 +98,7 @@ paths:
         *Markdown is supported in descriptions. Add information here for users to get accustomed to endpoints*
       parameters: []
       security: []
+      x-internal: true
     put:
       summary: Replace Todo
       operationId: put-todos-id
@@ -188,6 +190,7 @@ paths:
 
         *Markdown is supported in descriptions. Add information here for users to get accustomed to endpoints*
       security: []
+      x-internal: true
     parameters: []
     delete:
       summary: Delete User
@@ -271,6 +274,7 @@ components:
         - completed_at
         - created_at
         - updated_at
+      x-internal: true
     User:
       description: ''
       type: object
@@ -302,6 +306,7 @@ components:
         - lastName
         - phoneNumber
         - emailAddress
+      x-internal: true
   securitySchemes:
     API Key:
       name: apikey
